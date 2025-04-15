@@ -1,0 +1,44 @@
+body {
+  background-color: #93c0a4;
+  color: #dfeecd;
+  font-family: "Instrument Sans", sans-serif;
+  text-align: center;
+  list-style-position: inside;
+}
+
+h1 {
+  font-family: "Fraunces";
+  font-size: 60px;
+  color: #6d6852;
+}
+
+h2 {
+  color: #3c443d;
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding-bottom: 20px;
+  list-style-type: "🍃 ";
+}
+
+#dog {
+  padding-top: 20px;
+}
+
+#icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
