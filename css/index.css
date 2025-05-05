@@ -1,10 +1,14 @@
+html {
+  font-size: 16px;
+}
+
 header {
   background-color: #3c443d;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 3.125em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,13 +19,14 @@ header * {
 }
 
 header li {
-  margin: 20px;
+  margin: 1.25em;
 }
 
 header li a {
   text-decoration: none;
   color: #dfeecd;
   font-family: "Fraunces", serif;
+  font-size: 1.25rem;
 }
 
 body {
@@ -30,29 +35,28 @@ body {
   font-family: "Instrument Sans", sans-serif;
   text-align: center;
   list-style-position: inside;
-  margin-top: 80px;
+  margin-top: 5em;
 }
 
 h1 {
   font-family: "Fraunces";
-  font-size: 60px;
+  font-size: 3.75rem;
   color: #6d6852;
 }
 
-/* Create a css rule for <section> to add padding between each one -Added 40px padding to 'section' */
 section {
-  padding: 40px;
+  padding: 2.5em;
 }
 
 h2 {
   color: #3c443d;
   font-family: "Fraunces", serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-decoration: underline;
   margin: auto;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 0.625em;
+  padding-top: 0.625em;
 }
 
 p {
@@ -60,39 +64,58 @@ p {
 }
 
 #dog {
-  padding-top: 15px;
+  padding-top: 0.937em;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Create a Css rule for one of you sections such as Experience to align it 
-to something other than center.  - I have aligned text in #cv ul to the left
-
-Each list item within the "Experience" section could be styled more distinctively, for instance, 
-with borders, background color, and padding to define them as blocks. -I have adjusted the list items with alternating background colors + padding */
 #cv {
-  display: flex;
+  justify-items: center;
+}
+
+#exp-1 {
+  display: grid;
+  grid-template-columns: 37.5em 37.5em;
+  grid-template-rows: 2.5em 2.5em;
+}
+
+#exp-2 {
+  display: grid;
+  grid-template-columns: 37.5em 37.5em;
+  grid-template-rows: 2.5em 2.5em;
+}
+
+#exp-3 {
+  display: grid;
+  grid-template-columns: 37.5em 37.5em;
+  grid-template-rows: 2.5em 2.5em;
 }
 
 #cv ul {
-  flex: 1;
   list-style-type: none;
   text-align: left;
-  padding-inline-start: 0px;
 }
 
-#dates li {
+#title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
   background-color: #9fd3b3;
   color: #3c443d;
-  font-size: 15px;
-  padding: 12.5px;
+  padding-top: 0.5rem;
+  padding-left: 0.3125rem;
 }
 
-#may {
-  margin-bottom: 23.5px;
-  margin-top: 5px;
+#desc {
+  font-size: 1rem;
 }
 
-#feb {
-  margin-bottom: 23.5px;
+#dates {
+  background-color: #9fd3b3;
+  color: #3c443d;
+  font-size: 1rem;
+  padding-top: 0.625em;
+  padding-left: 12.5em;
 }
 
 #container {
@@ -103,21 +126,112 @@ with borders, background color, and padding to define them as blocks. -I have ad
 
 #icon {
   flex: 1;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  width: 3.125em;
+  height: 3.125em;
+  margin: 0.625em;
 }
 
-.title {
-  font-weight: bold;
-  font-size: 19px;
-  margin-bottom: 0px;
-  margin-top: 5px;
-  background-color: #9fd3b3;
-  color: #3c443d;
-  padding: 10px;
+/*for mobile */
+@media (max-width: 767px) {
+  header {
+    position: absolute;
+  }
+
+  header li {
+    margin: 0.6em;
+  }
+
+  header li a {
+    font-size: 0.85rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+  }
+
+  #exp-1 {
+    grid-template-columns: 16em 15em;
+    grid-template-rows: 4em 4em;
+  }
+
+  #exp-2 {
+    grid-template-columns: 16em 15em;
+    grid-template-rows: 4em 4em;
+  }
+
+  #exp-3 {
+    grid-template-columns: 16em 15em;
+    grid-template-rows: 4em 4em;
+  }
+
+  #title {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+
+  #desc {
+    font-size: 0.9rem;
+  }
+
+  #dates {
+    font-size: 1rem;
+    padding-top: 1.1em;
+    padding-left: 0em;
+    padding-right: 1em;
+    text-align: right;
+  }
+
+  #icon {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 }
 
-.desc {
-  font-size: 15px;
+/* for tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+    color: #3e3a2b;
+  }
+
+  #exp-1 {
+    grid-template-columns: 21em 20em;
+    grid-template-rows: 5em 5em;
+  }
+
+  #exp-2 {
+    grid-template-columns: 21em 20em;
+    grid-template-rows: 5em 5em;
+  }
+
+  #exp-3 {
+    grid-template-columns: 21em 20em;
+    grid-template-rows: 5em 5em;
+  }
+
+  #title {
+    font-size: 1.1rem;
+    padding-top: 1.2rem;
+  }
+
+  #desc {
+    font-size: 1rem;
+  }
+
+  #dates {
+    font-size: 1.1rem;
+    padding-top: 1.1em;
+    padding-left: 0em;
+    padding-right: 1em;
+    text-align: right;
+  }
+
+  #icon {
+    width: 4em;
+    height: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 }
