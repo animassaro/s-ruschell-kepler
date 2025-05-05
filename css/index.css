@@ -118,6 +118,23 @@ p {
   padding-left: 12.5em;
 }
 
+#Skills {
+  justify-items: center;
+}
+
+#Skills ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: "🍁 ";
+  text-align: left;
+  font-size: 1.2rem;
+  padding-left: 0px;
+}
+
+#Skills ul li {
+  padding: 0.3em;
+}
+
 #container {
   display: flex;
   align-items: center;
@@ -183,6 +200,10 @@ p {
     text-align: right;
   }
 
+  #Skills ul {
+    font-size: 1.5rem;
+  }
+
   #icon {
     margin-left: 3em;
     margin-right: 3em;
@@ -226,6 +247,10 @@ p {
     padding-left: 0em;
     padding-right: 1em;
     text-align: right;
+  }
+
+  #Skills ul {
+    font-size: 1.5rem;
   }
 
   #icon {
