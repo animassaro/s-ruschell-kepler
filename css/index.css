@@ -135,6 +135,86 @@ p {
   padding: 0.3em;
 }
 
+#form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  text-align: left;
+  width: 80%;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border: 0.15em solid #3c443d;
+  border-radius: 0.3em;
+}
+
+input:hover,
+textarea:hover {
+  background-color: #dfeecd;
+}
+
+#sub {
+  background-color: #3c443d;
+  color: #dfeecd;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  width: 30%;
+  height: 3em;
+  border: none;
+  border-radius: 0.3em;
+}
+#sub:hover {
+  background-color: #dfeecd;
+  color: #3c443d;
+}
+
+#messages {
+  justify-items: center;
+}
+
+#messages ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.2rem;
+  padding-left: 0px;
+}
+
+#messages ul li {
+  padding: 0.3em;
+}
+
+#messages button {
+  background-color: #3c443d;
+  color: #dfeecd;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3em;
+  font-size: 0.7em;
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+#messages button:hover {
+  background-color: #dfeecd;
+  color: #3c443d;
+}
+
 #container {
   display: flex;
   align-items: center;
@@ -208,6 +288,30 @@ p {
     margin-left: 3em;
     margin-right: 3em;
   }
+
+  label {
+    font-size: 1.5rem;
+  }
+  input {
+    height: 2em;
+  }
+
+  textarea {
+    height: 4em;
+  }
+
+  #sub {
+    font-size: 1.4em;
+    height: 4em;
+  }
+
+  #messages ul {
+    font-size: 2em;
+  }
+
+  #messages button {
+    margin-left: 2rem;
+  }
 }
 
 /* for tablet */
@@ -251,6 +355,30 @@ p {
 
   #Skills ul {
     font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 2rem;
+  }
+  input {
+    height: 3em;
+  }
+
+  textarea {
+    height: 6em;
+  }
+
+  #sub {
+    font-size: 1.9em;
+    height: 3em;
+  }
+
+  #messages ul {
+    font-size: 2em;
+  }
+
+  #messages button {
+    margin-left: 2rem;
   }
 
   #icon {
