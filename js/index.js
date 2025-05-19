@@ -58,3 +58,30 @@ messageForm[0].addEventListener("submit", (event) => {
 
   messageForm[0].reset();
 });
+
+const projectSection = document.getElementById("Projects");
+const projectList = projectSection.querySelector("ul");
+
+fetch("https://api.github.com/users/animassaro/repos")
+  .then((res) => {
+    if (!res.ok) {
+      throw new Error("Mistakes were made.");
+    }
+    return res.json();
+  })
+  .then((repositories) => {
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      const projectLink = document.createElement("a");
+      projectLink.innerHTML = repositories[i].name;
+      projectLink.href = repositories[i].html_url;
+      projectLink.target = "_blank";
+      project.appendChild(projectLink);
+      projectList.append(project);
+    }
+  })
+  .catch((error) => {
+    const errorMsg = document.createElement("p");
+    errorMsg.innerText = error;
+    projectSection.appendChild(errorMsg);
+  });
