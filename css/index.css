@@ -118,21 +118,45 @@ p {
   padding-left: 12.5em;
 }
 
-#Skills {
+#Skills,
+#Projects {
   justify-items: center;
 }
 
 #Skills ul {
   display: flex;
   flex-direction: column;
-  list-style-type: "🍁 ";
+  list-style-type: "🪻";
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding-left: 0px;
 }
 
-#Skills ul li {
+#Skills li,
+#Projects li {
   padding: 0.3em;
+}
+
+#Projects ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+#Projects a {
+  color: #3c443d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#Projects a:visited {
+  color: #dfeecd;
+}
+
+#Projects a:hover {
+  color: #9fd3b3;
 }
 
 #form_container {
