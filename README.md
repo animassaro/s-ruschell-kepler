@@ -19,8 +19,6 @@ A single page website divided into sections. Each section may also be jumped to 
 ## Open API Project
 
 Please find my Open API Project [here](https://github.com/animassaro/open-api-project).
-=======
-Full name: Stasia Ruschell
 
-[My Open API Project](https://github.com/animassaro/open-api-project)
->>>>>>> main
+
+
