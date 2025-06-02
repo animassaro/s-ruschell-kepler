@@ -1,7 +1,5 @@
-# s-ruschell-kepler
+# S Ruschell Portfolio Page
 
-Week 5 Assignment
+A simple website exhibiting my experience and github projects for Code the Dream.
 
-Full name: Stasia Ruschell
 
-[My Open API Project](https://github.com/animassaro/open-api-project)
