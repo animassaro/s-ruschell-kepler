@@ -1,3 +1,4 @@
+//Inserts copyright logo, current year, and name in footer of index.html
 const body = document.querySelector("body");
 const foot = document.createElement("footer");
 
@@ -11,11 +12,13 @@ copyright.innerHTML = "<span>&#169;</span> Stasia Ruschell " + thisYear;
 
 footer.appendChild(copyright);
 
+//Inserts skills in skills section of index.html
 const skills = ["C#", "Unity", "JavaScript", "HTML", "CSS"];
 
 const skillsSection = document.getElementById("Skills");
 const skillsList = skillsSection.querySelector("ul");
 
+//Takes input from user and posts them in message section index.html
 for (let i in skills) {
   const skill = document.createElement("li");
   skill.innerHTML = skills[i];
@@ -25,13 +28,10 @@ for (let i in skills) {
 const messageForm = document.getElementsByName("leave_message");
 messageForm[0].addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log(event);
 
   const username = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
-
-  console.log(username, email, message);
 
   const messageSection = document.getElementById("messages");
   const messageList = messageSection.querySelector("ul");
@@ -45,6 +45,7 @@ messageForm[0].addEventListener("submit", (event) => {
     message +
     "</span>";
 
+  //Removes messages posted to index.html
   const removeButton = document.createElement("button");
   removeButton.innerHTML = "Remove";
   removeButton.setAttribute("type", "button");
@@ -59,6 +60,7 @@ messageForm[0].addEventListener("submit", (event) => {
   messageForm[0].reset();
 });
 
+//API call to populate projects section of index.html
 const projectSection = document.getElementById("Projects");
 const projectList = projectSection.querySelector("ul");
 
